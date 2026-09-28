@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "Oculta Verificados",
+    "slug": "oculta-verificados",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.exemplo.ocultaverificados",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.exemplo.ocultaverificados",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    }
+  }
+}
