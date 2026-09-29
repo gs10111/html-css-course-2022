@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Oculta Verificados</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Oculta Verificados</h1>
+      <label class="switch">
+        <input type="checkbox" id="enabled" />
+        <span class="slider"></span>
+      </label>
+    </header>
+
+    <p class="counter"><strong id="count">0</strong> tweets ocultos nesta aba</p>
+
+    <fieldset>
+      <legend>Ocultar selos</legend>
+      <label><input type="checkbox" id="hideBlue" /> <span class="dot dot--blue"></span> Azul (X Premium)</label>
+      <label><input type="checkbox" id="hideGold" /> <span class="dot dot--gold"></span> Dourado (organizações)</label>
+      <label><input type="checkbox" id="hideGray" /> <span class="dot dot--gray"></span> Cinza (governo)</label>
+      <label><input type="checkbox" id="hideQuoted" /> Também ocultar tweets que citam verificados</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Modo</legend>
+      <label><input type="radio" name="mode" value="hide" /> Remover da timeline</label>
+      <label><input type="radio" name="mode" value="collapse" /> Recolher com botão "Mostrar"</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Exceções (um @ por linha)</legend>
+      <textarea id="whitelist" rows="4" placeholder="@nasa&#10;@exemplo"></textarea>
+    </fieldset>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
